@@ -48,8 +48,8 @@ This study is quite dirty, but it was created for the purpose of providing persp
 
 * List drawings
   
-![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/2.png)
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/1.png)
 
 * Example drawing analyze
   
-![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/1.png)
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/2.png)
