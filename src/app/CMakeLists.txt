@@ -282,6 +282,7 @@ add_library(app-lib
   commands/cmd_undo_history.cpp
   commands/cmd_unlink_cel.cpp
   commands/cmd_zoom.cpp
+  commands/cmd_send_to_bridge.cpp
   commands/command.cpp
   commands/commands.cpp
   commands/filters/cmd_color_curve.cpp
@@ -472,4 +473,28 @@ add_library(app-lib
   xml_document.cpp
   ${data_recovery_files}
   ${generated_files})
+
+target_link_libraries(app-lib
+  base-lib
+  cfg-lib
+  css-lib
+  doc-lib
+  filters-lib
+  fixmath-lib
+  gfx-lib
+  net-lib
+  render-lib
+  ui-lib
+  undo
+  websocket_client
+  ${TINYXML_LIBRARIES}
+  ${JPEG_LIBRARIES}
+  ${GIF_LIBRARIES}
+  ${PNG_LIBRARIES}
+  ${WEBP_LIBRARIES}
+  ${ZLIB_LIBRARIES}
+  ${FREETYPE_LIBRARIES}
+  ${PIXMAN_LIBRARIES}
+  ${CURL_LIBRARIES}
+  ${PLATFORM_LIBS})
 endif()

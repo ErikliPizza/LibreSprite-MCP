@@ -118,6 +118,7 @@ add_executable(libresprite WIN32
 
 target_link_libraries(libresprite ${KEEP_INJECTIONS_BEGIN}
   app-lib
+  websocket_client
   base-lib
   cfg-lib
   clip
@@ -151,7 +152,11 @@ install(TARGETS libresprite
 install(DIRECTORY ../data
   DESTINATION share/libresprite)
 else()
-  add_custom_target(libresprite DEPENDS app-lib)
+  if(ENABLE_SCRIPTING)
+    add_custom_target(libresprite DEPENDS app-lib script-lib)
+  else()
+    add_custom_target(libresprite DEPENDS app-lib)
+  endif()
 endif()
 
 add_dependencies(libresprite copy_data)

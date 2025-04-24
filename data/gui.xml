@@ -527,6 +527,8 @@
         <item command="ExportSpriteSheet" text="&amp;Export Sprite Sheet" />
         <item command="RepeatLastExport" text="Repeat &amp;Last Export" />
         <separator />
+        <item command="SendToBridge" text="Send to &amp;Bridge" />
+        <separator />
         <item command="Exit" text="E&amp;xit" />
       </menu>
       <menu text="&amp;Edit">

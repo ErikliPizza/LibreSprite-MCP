@@ -369,3 +369,20 @@ add_subdirectory(src)
 # Third party libraries
 
 add_subdirectory(third_party)
+
+# Add source directory to include paths
+include_directories(${CMAKE_SOURCE_DIR})
+
+# Find required packages
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBWEBSOCKETS REQUIRED libwebsockets)
+
+# Add libwebsockets to the include directories
+include_directories(${LIBWEBSOCKETS_INCLUDE_DIRS})
+
+# Add websocket directory
+add_subdirectory(src/app/websocket)
+
+# Add test client executable
+add_executable(websocket_test_client src/app/websocket/test_client.cpp)
+target_link_libraries(websocket_test_client websocket_client)
