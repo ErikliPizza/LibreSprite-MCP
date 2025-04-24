@@ -37,3 +37,19 @@ Currently each restart requires the step 3. Else there will be conflict via mcp 
 Analyze drawing does not work properly currently (it was actually, but i broke it)
 
 This study is quite dirty, but it was created for the purpose of providing perspective to usages of MCP etc.
+
+* LibreSprite
+  
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/4.png)
+
+* Visualize on terminal
+  
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/3.png)
+
+* List drawings
+  
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/2.png)
+
+* Example drawing analyze
+  
+![](https://github.com/ErikliPizza/LibreSprite-MCP/blob/main/Images/1.png)
